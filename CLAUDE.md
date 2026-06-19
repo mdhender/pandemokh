@@ -6,7 +6,7 @@ We are exploring the **design of an event-driven PBEM (Play-By-Email) game
 engine**. This is design exploration, not implementation. The output is
 *essays and design notes*, not (yet) code.
 
-Expect this to be messy. We will chase rabbit holes, take wrong turns, and
+Expect this to be messy. We will run down rabbit holes, take wrong turns, and
 abandon ideas. Dead ends are expected and acceptable. The design may end up
 looking nothing like where it starts — "event-driven" is the current framing,
 not a commitment.
@@ -21,12 +21,6 @@ not a commitment.
   separate concern from this design exploration.
 
 ## Source material
-
-- `docs/essays/event-driven-pbem-engine-v1.md` — first draft of the founding
-  essay.
-- `docs/essays/event-driven-pbem-engine-v2.md` — expanded draft, plus an
-  addendum of follow-up topics and a proposed essay sequence (snapshots,
-  storage, testing, reports, the turn loop, combat, auth).
 
 The core thesis so far: a PBEM engine should be organized around an **event
 stream** that transforms player **intent** into **fact**, sometimes producing
@@ -46,10 +40,10 @@ The site lives in `site/` and is built with **Hugo** (extended) using the
 Documentation follows the [Diataxis](https://diataxis.fr) framework — four
 types split by two axes (action vs. cognition, acquisition vs. application):
 
-| | Action | Cognition |
-|---|---|---|
-| **Acquisition** | Tutorials | **Explanation** |
-| **Application** | How-to guides | Reference |
+|                 | Action        | Cognition       |
+|-----------------|---------------|-----------------|
+| **Acquisition** | Tutorials     | **Explanation** |
+| **Application** | How-to guides | Reference       |
 
 The content tree under `site/content/` has a section per type. **Our essays
 are Explanation** — they discuss *why*, weigh trade-offs, and consider
@@ -60,5 +54,5 @@ first (use the `diataxis` skill) and don't mix types in one document.
 
 - When an essay's addendum lists a topic as "its own essay," that's a backlog
   item, not something to fold into the current piece. Keep one star per essay.
-- Prefer the vocabulary the essays establish: *command*, *intent*, *derived
-  intent*, *fact*, *phase*, *snapshot*, *stream*.
+- Prefer the vocabulary the essays establish — see the
+  [glossary](site/content/reference/glossary.md).
