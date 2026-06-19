@@ -1,0 +1,49 @@
+baseURL: "https://example.org/"
+title: "Event-Driven PBEM Engine"
+locale: "en-us"
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Documentation
+      pageRef: /
+      weight: 1
+    - name: Search
+      weight: 2
+      params:
+        type: search
+    - name: GitHub
+      weight: 3
+      url: "https://github.com/mdhender/pandemokh"
+      params:
+        icon: github
+
+params:
+  description: "Design notes and essays on an event-driven Play-By-Email game engine."
+  navbar:
+    displayTitle: true
+    displayLogo: false
+  page:
+    width: normal
+  theme:
+    default: system
+    displayToggle: true
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+  editURL:
+    enable: false
