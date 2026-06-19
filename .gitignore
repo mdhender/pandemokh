@@ -1,4 +1,11 @@
+*~
+*.dem
+*.exe
+*.png
+.archives/
 .code/
 .idea/
 .vscode/
-/dem/
+AGENTS.md
+cmd/
+docs/
