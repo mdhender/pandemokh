@@ -1,7 +1,7 @@
 ---
 title: "Intent, Resolution, and Fact"
 linkTitle: "Intent, Resolution, and Fact"
-weight: 1
+weight: 2
 toc: true
 ---
 
