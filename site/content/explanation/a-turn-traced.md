@@ -6,8 +6,8 @@ toc: true
 ---
 
 This page traces the sample turn from
-[Intent, Resolution, and Fact](intent-resolution-and-fact.md) using the
-[notation](../reference/notation.md). The purpose is to show how intent,
+[Intent, Resolution, and Fact](/explanation/intent-resolution-and-fact.md) using the
+[notation](/reference/notation.md). The purpose is to show how intent,
 fact, derived intent, and working state interact as each phase runs.
 
 ## Setup

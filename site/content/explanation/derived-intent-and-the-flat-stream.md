@@ -5,10 +5,10 @@ weight: 4
 toc: true
 ---
 
-The [first essay](intent-resolution-and-fact.md) establishes that a PBEM engine
+The [first essay](/explanation/intent-resolution-and-fact.md) establishes that a PBEM engine
 transforms intent into fact, and that resolution sometimes produces derived
 intent that later phases must handle. The
-[worked example](a-turn-traced.md) shows this in motion: the combat engine
+[worked example](/explanation/a-turn-traced.md) shows this in motion: the combat engine
 emits a retreat intent mid-turn, and a later phase resolves it.
 
 A question follows immediately from that picture.
@@ -88,7 +88,7 @@ Facts commit to working state immediately. Derived intent waits for the
 appropriate phase.
 
 The spider queen scenario then flows naturally from the
-[worked example](a-turn-traced.md). After the attack phase:
+[worked example](/explanation/a-turn-traced.md). After the attack phase:
 
 ```text
 Fact(Wounded(Biff, 5hp))

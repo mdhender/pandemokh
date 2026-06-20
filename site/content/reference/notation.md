@@ -9,7 +9,7 @@ Shorthand used in the design notes to represent stream records and working
 state. The notation is illustrative, not a specification of any implementation
 format.
 
-For definitions of the terms used here, see the [Glossary](glossary.md).
+For definitions of the terms used here, see the [Glossary](/reference/glossary.md).
 
 ## Stream records
 

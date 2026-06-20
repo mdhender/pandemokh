@@ -5,7 +5,7 @@ weight: 5
 toc: true
 ---
 
-The [first essay](intent-resolution-and-fact.md) describes three roles for
+The [first essay](/explanation/intent-resolution-and-fact.md) describes three roles for
 state: authoritative history in the event stream, working state in memory
 during resolution, and a durable snapshot at the end of each turn. That
 framing is useful, but it leaves the relationship between the three imprecise.
@@ -16,7 +16,7 @@ bag of attribute values. A snapshot is an event pointer.
 ## The Stream Is a Log
 
 The event stream described in the earlier essays is a log in the sense that
-Jay Kreps uses in *I Heart Logs* (see [Bibliography](../reference/bibliography.md)):
+Jay Kreps uses in *I Heart Logs* (see [Bibliography](/reference/bibliography.md)):
 append-only, ordered, and multiply readable. Every record in the log — intent
 or fact — receives a monotonically increasing unique ID. Readers advance
 through the log independently, each maintaining its own pointer.
@@ -62,14 +62,14 @@ to replay every fact since the game began. It is not authoritative. The log
 is authoritative. The projected state can always be reconstructed by replaying
 facts from any earlier snapshot's pointer to this one.
 
-This is what the [first essay](intent-resolution-and-fact.md) means when it
+This is what the [first essay](/explanation/intent-resolution-and-fact.md) means when it
 says a snapshot is "not a replacement for the stream — it is a summary." The
 summary is a cache of a computation the log can reproduce.
 
 ## Phase Engines and Local Snapshots
 
 A phase engine that resolves a batch of intents simultaneously — as discussed
-in [Derived Intent and the Flat Stream](derived-intent-and-the-flat-stream.md)
+in [Derived Intent and the Flat Stream](/explanation/derived-intent-and-the-flat-stream.md)
 — takes a local snapshot at the start of its batch. That snapshot is a pointer
 into the log at the moment the batch begins. The phase engine resolves all
 intents in the batch against state at that pointer. It does not see facts
@@ -80,7 +80,7 @@ completes, the phase engine's local pointer is discarded. Working state has
 been updated by the facts emitted during the batch. The next phase engine
 begins from a pointer that includes those facts.
 
-This is how the [worked example](a-turn-traced.md) produces correct results:
+This is how the [worked example](/explanation/a-turn-traced.md) produces correct results:
 the attack phase reads Skar's defense bonus from working state because the
 defense phase ran first and its fact was committed before the attack phase's
 pointer was established.
@@ -130,7 +130,7 @@ is permanent evidence of the rewind.
 Player-submitted intents before the rewind point survive untouched. Only
 derived work — facts and derived intents produced by the engine — is
 tombstoned. This is the operational form of the rule from the
-[first essay](intent-resolution-and-fact.md):
+[first essay](/explanation/intent-resolution-and-fact.md):
 
 > Preserve accepted player intent; discard derived turn work.
 

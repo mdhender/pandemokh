@@ -13,16 +13,16 @@ chooses its own resolution rules, and why a snapshot is best understood as a
 pointer into a log.
 
 The companion essays develop each idea in depth:
-[Intent, Resolution, and Fact](intent-resolution-and-fact.md) for the core
-model, [A Turn Traced](a-turn-traced.md) for the worked example,
-[Derived Intent and the Flat Stream](derived-intent-and-the-flat-stream.md)
+[Intent, Resolution, and Fact](/explanation/intent-resolution-and-fact.md) for the core
+model, [A Turn Traced](/explanation/a-turn-traced.md) for the worked example,
+[Derived Intent and the Flat Stream](/explanation/derived-intent-and-the-flat-stream.md)
 for the routing problem, and
-[Snapshots and the Event Pointer](snapshots-and-the-event-pointer.md) for
+[Snapshots and the Event Pointer](/explanation/snapshots-and-the-event-pointer.md) for
 state. This essay assumes them and connects them.
 
 Throughout, one running example illustrates the ideas. Anne controls Biff. Joe
 controls Skar. Anne orders Biff to move and attack; Joe orders Skar to move and
-defend. The full trace lives in [A Turn Traced](a-turn-traced.md); fragments of
+defend. The full trace lives in [A Turn Traced](/explanation/a-turn-traced.md); fragments of
 it appear here to ground each idea.
 
 ## Starting in the Wrong Place
@@ -95,7 +95,7 @@ well.
 ## Grounding: The Transaction Log
 
 The structure underneath all of this is a log, in the sense Jay Kreps describes
-in *I Heart Logs* (see [Bibliography](../reference/bibliography.md)). A reader
+in *I Heart Logs* (see [Bibliography](/reference/bibliography.md)). A reader
 arriving from a database background will recognize it immediately as a
 write-ahead log or a transaction log, and that analogy is worth making explicit
 because it grounds everything that follows.
