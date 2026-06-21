@@ -18,15 +18,24 @@ markup:
 
 menu:
   main:
-    - name: Documentation
-      pageRef: /
+    - name: Tutorials
+      pageRef: /tutorials
       weight: 1
-    - name: Search
+    - name: How-To
+      pageRef: /how-to
       weight: 2
+    - name: Explanations
+      pageRef: /explanation
+      weight: 3
+    - name: References
+      pageRef: /reference
+      weight: 4
+    - name: Search
+      weight: 5
       params:
         type: search
     - name: GitHub
-      weight: 3
+      weight: 6
       url: "https://github.com/mdhender/pandemokh"
       params:
         icon: github
