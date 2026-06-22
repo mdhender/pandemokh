@@ -13,8 +13,8 @@ not a commitment.
 
 ## Scope
 
-- **In scope:** the essays in `docs/essays/`, the design ideas they explore,
-  and the documentation site under `site/` that publishes them.
+- **In scope:** the essays in `site/content/explanation/`, the design ideas
+  they explore, and the documentation site under `site/` that publishes them.
 - **Out of scope (ignore unless explicitly asked):** the Go code in `cmd/`,
   the DEM (Digital Elevation Model) terrain-processing tooling, and the
   `.archives/` DEM data. That work is described in `AGENTS.md` and is a
